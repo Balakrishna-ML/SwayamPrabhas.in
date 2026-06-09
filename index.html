@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
         body {
             margin: 0;
@@ -17,10 +17,10 @@
 
         .navbar-brand img,
         .logo-img {
-            height: 180px !important;
+            height: 120px !important;
             width: auto;
             object-fit: contain;
-            padding-left: 20px;
+            padding-left: 25px;
         }
 
         .hero-section {
@@ -35,7 +35,9 @@
         }
 
         .navbar {
-            min-height: 150px;
+            min-height: unset;
+            padding-top: 5px;
+            padding-bottom: 5px;
         }
 
         .hero-section,
@@ -316,35 +318,44 @@
             color: #0056A6;
             font-size: 17px;
         }
+
         .expertise-box {
-    opacity: 0;
-    transform: translateY(60px);
-    transition: all 0.8s ease;
-}
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 0.8s ease;
+        }
 
-.expertise-box.show {
-    opacity: 1;
-    transform: translateY(0);
-}.about-para {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.7s ease;
-}
+            .expertise-box.show {
+                opacity: 1;
+                transform: translateY(0);
+            }
 
-.about-para.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-.info-card {
-    opacity: 0;
-    transform: translateX(-80px);
-    transition: all 0.8s ease;
-}
+        .about-para {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.7s ease;
+        }
 
-.info-card.show {
-    opacity: 1;
-    transform: translateX(0);
-}
+            .about-para.show {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        .info-card {
+            opacity: 0;
+            transform: translateX(-80px);
+            transition: all 0.8s ease;
+        }
+
+            .info-card.show {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            z-index: 5;
+        }
     </style>
 
 </head>
@@ -513,6 +524,11 @@
                     </div>
                 </div>
 
+            </div>
+
+            <!-- 🔥 LAST 3 CENTERED ROW -->
+            <div class="row justify-content-center">
+
                 <div class="col-md-3 col-sm-6 mb-4">
                     <div class="service-card" onclick="setView('warehousing')" style="cursor: pointer;">
                         <img src="images/warehousing.jpg" class="service-img" />
@@ -534,7 +550,6 @@
                     </div>
                 </div>
 
-                
             </div>
         </section>
     </div>
@@ -569,20 +584,20 @@
             <h2 class="text-logistics mb-4">Fly Your Cargo with Ease
             </h2>
 
-            <p style="font-size:17px;">
+            <p style="font-size: 17px;">
                 Looking for a reliable way to get your cargo transported quickly? Our air freight services at Swayam Prabhas are just what you need. We specialize in air cargo services, offering you efficient and cost-effective solutions. Whether it’s a time-sensitive delivery or a high-value shipment, we’ve got you covered.
             </p>
 
             <h3 class="text-logistics mt-5">Why Choose Swayam Prabhas Logistics for Air Freight?
             </h3>
 
-            <p style="font-size:17px;">
+            <p style="font-size: 17px;">
                 At Swayam Prabhas Logistics, we understand the importance of timely deliveries. Our air freight charges are competitive, and our service is unparalleled.
             </p>
 
             <div class="row mt-4">
 
-                <div class="row mt-4 text-center expertise-box" >
+                <div class="row mt-4 text-center expertise-box">
 
                     <div class="col-md-4 mb-4">
                         <div class="p-3">
@@ -590,7 +605,7 @@
                                 <i class="bi bi-clock text-logistics" style="font-size: 3rem;"></i>
                             </div>
                             <h5 class="text-logistics">Speed and Efficiency</h5>
-                            <p class="text-muted medium px-2" style="font-size:17px;">
+                            <p class="text-muted medium px-2" style="font-size: 17px;">
                                 Our freight aircraft are ready to take your cargo to the skies, ensuring swift deliveries across the globe.
                             </p>
                         </div>
@@ -602,7 +617,7 @@
                                 <i class="bi bi-globe text-logistics" style="font-size: 3rem;"></i>
                             </div>
                             <h5 class="text-logistics">Global Reach</h5>
-                            <p class="text-muted medium px-2" style="font-size:17px;">
+                            <p class="text-muted medium px-2" style="font-size: 17px;">
                                 No matter where you need to send your goods, our international cargo network ensures your shipment reaches its destination on time.
                             </p>
                         </div>
@@ -614,7 +629,7 @@
                                 <i class="fas fa-user-shield text-logistics" style="font-size: 3rem;"></i>
                             </div>
                             <h5 class="text-logistics">Safety and Security</h5>
-                            <p class="text-muted medium px-2" style="font-size:17px;">
+                            <p class="text-muted medium px-2" style="font-size: 17px;">
                                 Your cargo is valuable. We implement stringent safety protocols and security measures to ensure that your goods are protected throughout the transportation process.
                             </p>
                         </div>
@@ -626,7 +641,7 @@
                                 <i class="bi bi-shield-check text-logistics" style="font-size: 3rem;"></i>
                             </div>
                             <h5 class="text-logistics">Clearance Expertise</h5>
-                            <p class="text-muted medium px-2" style="font-size:17px;">
+                            <p class="text-muted medium px-2" style="font-size: 17px;">
                                 We handle the clearance of your goods seamlessly, so you don't have to worry about customs.
                             </p>
                         </div>
@@ -638,7 +653,7 @@
                                 <i class="bi bi-credit-card-2-front text-logistics" style="font-size: 3rem;"></i>
                             </div>
                             <h5 class="text-logistics">Competitive Pricing</h5>
-                            <p class="text-muted medium px-2" style="font-size:17px;">
+                            <p class="text-muted medium px-2" style="font-size: 17px;">
                                 We offer transparent and competitive air freight charges. You get value for money without compromising on service quality.
                             </p>
                         </div>
@@ -657,7 +672,7 @@
                 <span class="text-muted fw-bold text-uppercase tracking-wider small">Comprehensive</span>
                 <h3 class="text-logistics mb-3">Air Cargo Solutions</h3>
 
-                <p class="text-dark mb-4" style="max-width:800px; line-height:1.7; font-size:17px;">
+                <p class="text-dark mb-4" style="max-width: 800px; line-height: 1.7; font-size: 17px;">
                     From high-value electronics to perishable goods, Swayam Prabhas provides specialized air cargo solutions that cater to a variety of shipment types. Our services include:
                
                 </p>
@@ -666,7 +681,7 @@
                     <div class="col-md-4 mb-4">
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Priority Air Freight</h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 When time is of the essence, our priority air freight services ensure your urgent shipments reach their destination swiftly and securely.
                            
                             </p>
@@ -676,7 +691,7 @@
                     <div class="col-md-4 mb-4">
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Standard Air Freight</h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 Cost-effective and reliable, our standard air freight services offer excellent value for your regular shipping needs.
                            
                             </p>
@@ -686,7 +701,7 @@
                     <div class="col-md-4 mb-4">
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Charter Services</h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 For large, unusual, or time-critical shipments, our charter services provide a customized solution, ensuring direct and dedicated air transport.
                            
                             </p>
@@ -711,7 +726,7 @@
             <h2 class="text-logistics mb-4">Navigate the World with Swayam Prabhas Sea Freight Services
             </h2>
 
-            <p style="font-size:17px;">
+            <p style="font-size: 17px;">
                 When it comes to global shipping, sea freight remains the most cost-effective and efficient solution for transporting large volumes of goods across the world. At Swayam Prabhas, our sea freight services are designed to meet the diverse needs of businesses, providing reliable and comprehensive solutions that ensure your cargo reaches its destination safely and on time.
             </p>
 
@@ -726,7 +741,7 @@
                             <i class="bi bi-check-circle text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Reliability</h5>
-                        <p class="text-muted medium px-2" style="font-size:17px;">
+                        <p class="text-muted medium px-2" style="font-size: 17px;">
                             We pride ourselves on delivering shipments on time and in excellent condition. Count on us for consistent and dependable service.
                         </p>
                     </div>
@@ -738,7 +753,7 @@
                             <i class="bi bi-award text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Expertise</h5>
-                        <p class="text-muted medium px-2" style="font-size:17px;">
+                        <p class="text-muted medium px-2" style="font-size: 17px;">
                             With years of experience in the logistics industry, our team possesses the knowledge and skills to handle even the most challenging shipping scenarios. We stay up-to-date with the latest industry trends and regulations to provide you with the best possible service.
                         </p>
                     </div>
@@ -750,7 +765,7 @@
                             <i class="bi bi-headset text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Customer Support</h5>
-                        <p class="text-muted medium px-2" style="font-size:17px;">
+                        <p class="text-muted medium px-2" style="font-size: 17px;">
                             Our dedicated customer support team is always ready to assist you with any questions or concerns. We believe in building strong relationships with our clients, offering personalized support to ensure a smooth shipping experience
                         </p>
                     </div>
@@ -762,7 +777,7 @@
                             <i class="bi bi-globe2 text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Sustainability</h5>
-                        <p class="text-muted medium px-2" style="font-size:17px;">
+                        <p class="text-muted medium px-2" style="font-size: 17px;">
                             At Swayam Prabhas, we are committed to sustainability. We continually strive to minimize our environmental impact through efficient shipping practices and innovative solutions. By choosing our sea freight services, you contribute to a greener, more sustainable future.
                         </p>
                     </div>
@@ -786,7 +801,7 @@
                 <h3 class="text-logistics mb-3">Sea Freight Services
                 </h3>
 
-                <p class="text-dark mb-4" style="max-width: 800px; line-height: 1.7; font-size:17px;">
+                <p class="text-dark mb-4" style="max-width: 800px; line-height: 1.7; font-size: 17px;">
                     At Swayam Prabhas, we offer a wide range of sea freight services to cater to various shipping needs:
                 </p>
 
@@ -795,7 +810,7 @@
                     <div class="col-md-6 mb-4">
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold">Full Container Load (FCL)</h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 Ideal for large shipments, FCL involves transporting your cargo in a dedicated container. This option provides maximum security and control over your goods.
                             </p>
                         </div>
@@ -804,7 +819,7 @@
                     <div class="col-md-6 mb-4">
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold">Less than Container Load (LCL)</h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 Perfect for smaller shipments, LCL allows you to share container space with other shippers, reducing costs while ensuring your goods are delivered efficiently.
                             </p>
                         </div>
@@ -813,7 +828,7 @@
                     <div class="col-md-6 mb-4">
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold">Break Bulk Shipping</h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 For oversized or heavy cargo that cannot be containerized, we offer break bulk shipping services. Our team handles these complex shipments with expertise and precision.
                             </p>
                         </div>
@@ -822,7 +837,7 @@
                     <div class="col-md-6 mb-4">
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold">Project Cargo</h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 For large-scale or complex projects, we provide customized project cargo solutions. From planning and coordination to execution, Swayam Prabhas manages every detail to ensure the successful delivery of your project cargo.
                             </p>
                         </div>
@@ -845,14 +860,14 @@
             <h2 class="text-logistics mb-4">Ride the Rails to Cost-Effective Shipping
             </h2>
 
-            <p style="font-size:17px;">
+            <p style="font-size: 17px;">
                 Imagine your cargo gliding smoothly across the country, safe and sound on reliable railways. At Swayam Prabhas, we make that vision a reality with our top-notch rail freight services. Let’s get your goods rolling on the tracks of efficiency!
             </p>
 
             <h3 class="text-logistics mt-5">Why Swayam Prabhas Rail Freight is the Smart Choice
             </h3>
 
-            <p style="font-size:17px;">
+            <p style="font-size: 17px;">
                 At Swayam Prabhas, we transform your shipping challenges into seamless journeys.
             </p>
 
@@ -864,7 +879,7 @@
                             <i class="bi bi-cash-stack text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Economic Advantage</h5>
-                        <p class="text-muted small" style="font-size:17px;">
+                        <p class="text-muted small" style="font-size: 17px;">
                             Save big with rail transport. Cut down on freight charges and boost your bottom line.
                         </p>
                     </div>
@@ -876,7 +891,7 @@
                             <i class="bi bi-check-circle text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Unwavering Reliability</h5>
-                        <p class="text-muted small" style="font-size:17px;">
+                        <p class="text-muted small" style="font-size: 17px;">
                             Rail freight is known for its dependability. Trust Swayam Prabhas to deliver your cargo on time, every time.
                         </p>
                     </div>
@@ -888,7 +903,7 @@
                             <i class="bi bi-box-seam text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Massive Capacity</h5>
-                        <p class="text-muted small" style="font-size:17px;">
+                        <p class="text-muted small" style="font-size: 17px;">
                             Got a lot to ship? No problem. Rail transport handles large volumes effortlessly, perfect for heavy shipping demands.
                         </p>
                     </div>
@@ -900,7 +915,7 @@
                             <i class="bi bi-tree text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Eco-Friendly Transit</h5>
-                        <p class="text-muted small" style="font-size:17px;">
+                        <p class="text-muted small" style="font-size: 17px;">
                             Reduce your carbon footprint with rail transport. Choose Swayam Prabhas and contribute to a greener planet.
                         </p>
                     </div>
@@ -912,7 +927,7 @@
                             <i class="bi bi-geo-alt text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Nationwide Reach</h5>
-                        <p class="text-muted small" style="font-size:17px;">
+                        <p class="text-muted small" style="font-size: 17px;">
                             From bustling cities to remote towns, our rail parcel service spans the entire country. Your cargo will reach any destination you need.
                         </p>
                     </div>
@@ -936,16 +951,16 @@
                 <h3 class="text-logistics mb-3">Rail Cargo Solutions
                 </h3>
 
-                <p class="text-dark mb-4" style="max-width: 800px; line-height: 1.7; font-size:17px;">
+                <p class="text-dark mb-4" style="max-width: 800px; line-height: 1.7; font-size: 17px;">
                     At Swayam Prabhas, we understand that every shipment has specific requirements. Our rail cargo services are flexible and can be customized to suit your needs. Whether you’re transporting bulk commodities, industrial goods, or consumer products, we provide
                 </p>
 
-                <div class="row info-card" >
+                <div class="row info-card">
 
                     <div class="col-md-4 mb-4">
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold">Flexible Scheduling & Routing</h5>
-                            <p class="text-muted small mb-0" style="font-size:17px;">
+                            <p class="text-muted small mb-0" style="font-size: 17px;">
                                 Swayam Prabhas offers flexible scheduling and routing options to accommodate your business needs. Whether you require regular shipments or occasional transport, our rail services can be adapted to fit your schedule.
                             </p>
                         </div>
@@ -954,7 +969,7 @@
                     <div class="col-md-4 mb-4">
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold">Comprehensive Support</h5>
-                            <p class="text-muted small mb-0" style="font-size:17px;">
+                            <p class="text-muted small mb-0" style="font-size: 17px;">
                                 Our dedicated customer support team is available to assist you at every step. From initial consultation to final delivery, we ensure your rail freight experience is smooth and hassle-free.
                             </p>
                         </div>
@@ -963,7 +978,7 @@
                     <div class="col-md-4 mb-4">
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold">Specialized Cargo Handling</h5>
-                            <p class="text-muted small mb-0" style="font-size:17px;">
+                            <p class="text-muted small mb-0" style="font-size: 17px;">
                                 From hazardous materials to temperature-sensitive goods, our specialized handling ensures your cargo is transported safely and in compliance with all regulations.
                             </p>
                         </div>
@@ -986,14 +1001,14 @@
             <h2 class="text-logistics mb-4">Your Reliable Partner in Road Transport Solutions
             </h2>
 
-            <p style="font-size:17px;">
+            <p style="font-size: 17px;">
                 When it comes to dependable and flexible road transport services, Swayam Prabhas is your go-to logistics partner. Our extensive experience and comprehensive solutions ensure that your goods are transported safely, efficiently, and on time. Discover how our expert road transport services can enhance your supply chain and streamline your operations:
             </p>
 
             <h3 class="text-logistics mt-5">The Swayam Prabhas Difference
             </h3>
 
-            <p style="font-size:17px;">
+            <p style="font-size: 17px;">
                 Road Transport Excellence
             </p>
 
@@ -1005,7 +1020,7 @@
                             <i class="bi bi-shield-check text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Safety</h5>
-                        <p class="text-muted medium px-2" style="font-size:17px;">
+                        <p class="text-muted medium px-2" style="font-size: 17px;">
                             We prioritize the safety of your cargo with rigorous handling and transport protocols.
                         </p>
                     </div>
@@ -1017,7 +1032,7 @@
                             <i class="bi bi-eye text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Visibility</h5>
-                        <p class="text-muted medium px-2" style="font-size:17px;">
+                        <p class="text-muted medium px-2" style="font-size: 17px;">
                             Our advanced tracking systems provide real-time visibility, giving you control and transparency over your shipments.
                         </p>
                     </div>
@@ -1029,7 +1044,7 @@
                             <i class="bi bi-person-workspace text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Expertise</h5>
-                        <p class="text-muted medium px-2" style="font-size:17px;">
+                        <p class="text-muted medium px-2" style="font-size: 17px;">
                             With years of experience in the logistics industry, Swayam Prabhas has the knowledge and skills to handle complex road transport challenges.
                         </p>
                     </div>
@@ -1041,7 +1056,7 @@
                             <i class="bi bi-truck text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Reliability</h5>
-                        <p class="text-muted medium px-2" style="font-size:17px;">
+                        <p class="text-muted medium px-2" style="font-size: 17px;">
                             Count on Swayam Prabhas for consistent and dependable road transport services that ensure your goods arrive on time.
                         </p>
                     </div>
@@ -1053,7 +1068,7 @@
                             <i class="bi bi-arrow-repeat text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Flexibility</h5>
-                        <p class="text-muted medium px-2" style="font-size:17px;">
+                        <p class="text-muted medium px-2" style="font-size: 17px;">
                             Our customized solutions are designed to meet the unique needs of your business, offering flexibility to adapt to changing demands.
                         </p>
                     </div>
@@ -1081,7 +1096,7 @@
                 <h3 class="text-logistics mb-3">Road Transport Solutions
                 </h3>
 
-                <p class="text-dark mb-4" style="max-width: 800px; line-height: 1.7; font-size:17px;">
+                <p class="text-dark mb-4" style="max-width: 800px; line-height: 1.7; font-size: 17px;">
                     At Swayam Prabhas, we understand that every shipment is unique.
                 Our road transport services are tailored to meet your specific needs,
                 offering flexible and reliable options.
@@ -1093,7 +1108,7 @@
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Full Truckload (FTL)
                             </h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 For large shipments that require dedicated transport, our FTL services provide direct delivery without intermediate stops, ensuring speed and security.
                             </p>
                         </div>
@@ -1103,7 +1118,7 @@
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Less than Truckload (LTL)
                             </h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 For smaller shipments, our LTL services offer cost-effective transport by sharing truck space with other cargo, optimizing efficiency without compromising on safety.
                             </p>
                         </div>
@@ -1113,7 +1128,7 @@
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Specialized Transport
                             </h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 From hazardous materials to temperature-controlled goods, our specialized road transport solutions ensure your cargo is handled with the utmost care and in compliance with all regulations.
                             </p>
                         </div>
@@ -1136,14 +1151,14 @@
             <h2 class="text-logistics mb-4">Secure, Efficient, and Flexible Storage Solutions
             </h2>
 
-            <p style="font-size:17px;">
+            <p style="font-size: 17px;">
                 At Swayam Prabhas, we understand that efficient warehousing is a critical component of your supply chain. Our state-of-the-art warehousing solutions provide the perfect blend of security, efficiency, and flexibility to meet your unique storage needs. Whether you’re a small business or a large corporation, our facilities are designed to handle your inventory with the utmost care and precision.
             </p>
 
             <h3 class="text-logistics mt-5">Why Swayam Prabhas Warehousing is a Game Changer
             </h3>
 
-            <p style="font-size:17px;">
+            <p style="font-size: 17px;">
                 Partnering with Swayam Prabhas for your warehousing needs comes with a host of benefits:
             </p>
 
@@ -1155,7 +1170,7 @@
                             <i class="bi bi-building text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">State-of-the-Art Facilities</h5>
-                        <p class="text-muted medium" style="font-size:17px;">
+                        <p class="text-muted medium" style="font-size: 17px;">
                             Our warehouses are equipped with advanced technology and infrastructure to ensure optimal storage conditions. From climate control to automated inventory management systems, we provide the best environment for your goods.
                         </p>
                     </div>
@@ -1167,7 +1182,7 @@
                             <i class="bi bi-shield-lock text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Enhanced Security</h5>
-                        <p class="text-muted medium" style="font-size:17px;">
+                        <p class="text-muted medium" style="font-size: 17px;">
                             Your inventory's security is our top priority. Our warehouses are protected by 24/7 surveillance, access control systems, and robust security protocols to safeguard your products against theft and damage.
                         </p>
                     </div>
@@ -1179,7 +1194,7 @@
                             <i class="bi bi-box-seam text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Flexible Storage</h5>
-                        <p class="text-muted medium" style="font-size:17px;">
+                        <p class="text-muted medium" style="font-size: 17px;">
                             We offer a variety of storage solutions to fit your needs, including short-term and long-term storage, palletized storage, and bulk storage. Our flexible options allow you to scale up or down based on your inventory requirements.
                         </p>
                     </div>
@@ -1191,7 +1206,7 @@
                             <i class="bi bi-geo-alt text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Strategic Locations</h5>
-                        <p class="text-muted medium" style="font-size:17px;">
+                        <p class="text-muted medium" style="font-size: 17px;">
                             Our warehousing facilities are strategically located near major transportation hubs, allowing for quick and efficient distribution of your goods. This reduces transit times and costs, ensuring your products reach their destination promptly.
                         </p>
                     </div>
@@ -1216,7 +1231,7 @@
                 <h3 class="text-logistics mb-3">How Swayam Prabhas Warehousing Works
                 </h3>
 
-                <p class="text-dark mb-4" style="max-width: 800px; line-height: 1.7; font-size:17px;" >
+                <p class="text-dark mb-4" style="max-width: 800px; line-height: 1.7; font-size: 17px;">
                     Our warehousing solutions are designed to provide complete visibility, efficiency, and flexibility throughout your inventory management process.
                 </p>
 
@@ -1226,7 +1241,7 @@
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Assessment & Planning
                             </h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 We begin by understanding your specific storage needs and developing a customized warehousing plan.
                             </p>
                         </div>
@@ -1236,7 +1251,7 @@
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Seamless Integration
                             </h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 Our team works with you to ensure a smooth transition and integration of your inventory into our warehousing system.
                             </p>
                         </div>
@@ -1246,7 +1261,7 @@
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Ongoing Management
                             </h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 For oversized or heavy cargo that cannot be containerized, we offer break bulk shipping services. Our team handles these complex shipments with expertise and precision.
                             </p>
                         </div>
@@ -1256,7 +1271,7 @@
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Distribution & Fulfillment
                             </h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 We coordinate with your supply chain operations to ensure timely and accurate distribution of your products.
                             </p>
                         </div>
@@ -1279,14 +1294,14 @@
             <h2 class="text-logistics mb-4">Your Gateway to Hassle-Free International Trade
             </h2>
 
-            <p style="font-size:17px;">
+            <p style="font-size: 17px;">
                 Navigating the complexities of custom clearance can be a daunting task, but with Swayam Prabhas by your side, it becomes a seamless process. Our expert customs brokerage services ensure that your shipments clear customs quickly and efficiently, allowing you to focus on your core business activities. With Swayam Prabhas, you get more than just customs clearance—you get a comprehensive suite of logistics solutions designed to streamline your supply chain
             </p>
 
             <h3 class="text-logistics mt-5">What Makes Swayam Prabhas the Best Choice for Customs Clearance?
             </h3>
 
-            <p style="font-size:17px;">
+            <p style="font-size: 17px;">
                 Partnering with Swayam Prabhas for your Custom Clearance needs comes with a host of benefits:
             </p>
 
@@ -1298,7 +1313,7 @@
                             <i class="bi bi-file-earmark-check text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Expertise & Efficiency</h5>
-                        <p class="text-muted medium" style="font-size:17px;">
+                        <p class="text-muted medium" style="font-size: 17px;">
                             Our team of experienced customs brokers has in-depth knowledge of international trade regulations and procedures. We handle all the necessary paperwork, compliance checks, and negotiations with customs authorities, ensuring your shipments are cleared without delays. Trust Swayam Prabhas to manage the intricacies of import and export documentation, tariff classifications, and duty payments, so you can avoid costly penalties and delays.
                         </p>
                     </div>
@@ -1307,10 +1322,10 @@
                 <div class="col-md-3 mb-4">
                     <div class="p-3">
                         <div class="mb-3">
-                            <i class="bi bi-box-seam text-logistics" style="font-size:3rem;"></i>
+                            <i class="bi bi-box-seam text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Order Fulfillment</h5>
-                        <p class="text-muted medium" style="font-size:17px;">
+                        <p class="text-muted medium" style="font-size: 17px;">
                             Our comprehensive order fulfillment services are designed to meet your business needs. From picking and packing to shipping and delivery, Swayam Prabhas ensures your orders are processed accurately and swiftly. Our streamlined processes and cutting-edge technology guarantee timely fulfillment, enhancing your customer satisfaction and retention.
                         </p>
                     </div>
@@ -1322,7 +1337,7 @@
                             <i class="bi bi-arrow-left-right text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Cross-Docking</h5>
-                        <p class="text-muted medium" style="font-size:17px;">
+                        <p class="text-muted medium" style="font-size: 17px;">
                             Reduce handling times and storage costs with Swayam Prabhas's cross-docking services. We facilitate the direct transfer of goods from inbound to outbound transportation, minimizing the need for warehousing. This efficient approach not only accelerates the delivery process but also lowers storage and handling expenses, giving you a competitive edge.
                         </p>
                     </div>
@@ -1334,7 +1349,7 @@
                             <i class="bi bi-shield-check text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Compliance & Transparency</h5>
-                        <p class="text-muted medium" style="font-size:17px;">
+                        <p class="text-muted medium" style="font-size: 17px;">
                             We prioritize compliance and transparency in all our operations. Swayam Prabhas ensures that all customs procedures are conducted in strict adherence to international trade regulations, providing you with peace of mind. Our transparent processes and regular updates keep you informed at every stage of the customs clearance process.
                         </p>
                     </div>
@@ -1360,7 +1375,7 @@
                 <h3 class="text-logistics mb-3">Customs Clearance Solutions
                 </h3>
 
-                <p class="text-dark mb-4" style="max-width: 800px; line-height: 1.7; font-size:17px;">
+                <p class="text-dark mb-4" style="max-width: 800px; line-height: 1.7; font-size: 17px;">
                     At Swayam Prabhas, Our team of specialists handles everything from documentation to regulatory compliance, providing tailored solutions for hassle-free global trade.
                 </p>
 
@@ -1370,7 +1385,7 @@
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Documentation Handling
                             </h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 We manage all documentation meticulously, ensuring compliance and accuracy for smooth customs processing.
                             </p>
                         </div>
@@ -1380,7 +1395,7 @@
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Process Management
                             </h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 We streamline the customs clearance process, minimizing delays and ensuring timely delivery of your shipments.
                             </p>
                         </div>
@@ -1390,7 +1405,7 @@
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Personalized Consultation
                             </h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 Receive personalized guidance and support from our experts, tailored to meet your specific business requirements.
                             </p>
                         </div>
@@ -1400,7 +1415,7 @@
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Tariff Classification
                             </h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 Our team specializes in tariff classifications, optimizing duties and taxes for cost-effective international trade.
                             </p>
                         </div>
@@ -1423,7 +1438,7 @@
             <h2 class="text-logistics mb-4">Swayam Prabhas Logistics: Your Ultimate Door to Door Logistics Partner
             </h2>
 
-            <p style="font-size:17px;">
+            <p style="font-size: 17px;">
                 At Swayam Prabhas, we take the hassle out of shipping with our comprehensive
             door to door logistics service. From the moment your goods leave your premises
             until they reach their final destination, we handle every step of the process.
@@ -1433,7 +1448,7 @@
 
             </p>
 
-            <p style="font-size:17px;">
+            <p style="font-size: 17px;">
                 With our extensive experience in logistics, including air freight, rail freight,
             road transport, and ocean shipping, we ensure that your cargo reaches its
             destination safely and on time. Enjoy complete peace of mind knowing that
@@ -1444,7 +1459,7 @@
             <h3 class="text-logistics mt-5">Why Choose Swayam Prabhas for Door to Door Services?
             </h3>
 
-            <p style="font-size:17px;">
+            <p style="font-size: 17px;">
                 Partnering with Swayam Prabhas for your door to door logistics needs comes
             with a host of benefits:
             </p>
@@ -1457,7 +1472,7 @@
                             <i class="bi bi-lightning-charge text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Efficiency</h5>
-                        <p class="text-muted medium" style="font-size:17px;">
+                        <p class="text-muted medium" style="font-size: 17px;">
                             We guarantee timely deliveries with streamlined logistics
                         processes and cost-effective transportation solutions.
                         </p>
@@ -1470,7 +1485,7 @@
                             <i class="bi bi-eye text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Transparency</h5>
-                        <p class="text-muted medium" style="font-size:17px;">
+                        <p class="text-muted medium" style="font-size: 17px;">
                             Clear and accurate freight charges and international courier charges.
                         </p>
                     </div>
@@ -1482,7 +1497,7 @@
                             <i class="bi bi-award text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Expertise</h5>
-                        <p class="text-muted medium" style="font-size:17px;">
+                        <p class="text-muted medium" style="font-size: 17px;">
                             With years of experience in global logistics and supply chain optimization, we're your go-to partner.
                         </p>
                     </div>
@@ -1494,7 +1509,7 @@
                             <i class="bi bi-shield-check text-logistics" style="font-size: 3rem;"></i>
                         </div>
                         <h5 class="text-logistics">Reliability</h5>
-                        <p class="text-muted medium" style="font-size:17px;">
+                        <p class="text-muted medium" style="font-size: 17px;">
                             Our track record as a dependable logistics company speaks volumes.
                         </p>
                     </div>
@@ -1519,7 +1534,7 @@
                 <h3 class="text-logistics mb-3">Integrated Transport Solutions
                 </h3>
 
-                <p class="text-dark mb-4" style="max-width: 800px; line-height: 1.7; font-size:17px;">
+                <p class="text-dark mb-4" style="max-width: 800px; line-height: 1.7; font-size: 17px;">
                     Our Door to Door services are designed to optimize your supply chain, ensuring your goods are moved swiftly and securely from origin to destination:
                 </p>
 
@@ -1529,7 +1544,7 @@
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Tailored Just for You
                             </h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 From freight aircraft to truck transport, we customize our services to fit your needs. Handling everything from international cargo to domestic shipments, we ensure your goods are in safe hands throughout their journey.
                             </p>
                         </div>
@@ -1539,7 +1554,7 @@
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Hassle-Free Import and Export Clearance
                             </h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 Import customs clearance and export customs clearance can be a headache. Let our experts take care of the clearance of imported goods and export goods for you, ensuring everything runs smoothly and quickly.
                             </p>
                         </div>
@@ -1549,7 +1564,7 @@
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Smart Logistics and Supply Chain Management
                             </h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 We use the latest technology for labeling, warehousing, and distribution management to streamline your supply chain. Need cold chain logistics for temperature-sensitive items? Efficient rail freight solutions? No problem, we've got it all covered.
                             </p>
                         </div>
@@ -1559,7 +1574,7 @@
                         <div class="border-start border-logistics border-3 ps-3">
                             <h5 class="fw-bold text-dark mb-2">Secure & Protected
                             </h5>
-                            <p class="text-muted medium mb-0" style="font-size:17px;">
+                            <p class="text-muted medium mb-0" style="font-size: 17px;">
                                 Protecting your cargo is our priority. We offer comprehensive cargo and freight insurance options to keep your shipments safe. Our clearing and forwarding agents are ready to tackle any challenges, making sure your goods arrive safely and intact.
                             </p>
                         </div>
@@ -1594,349 +1609,349 @@
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Accessorial charges</h4>
-                                <p style="font-size:17px;">These charges are for services outside of the normal pickup and delivery of goods. A few examples of additional charges you might find on your bill include wait time, bunkers, storage, and packing.</p>
+                                <p style="font-size: 17px;">These charges are for services outside of the normal pickup and delivery of goods. A few examples of additional charges you might find on your bill include wait time, bunkers, storage, and packing.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Anti Dumping Duty</h4>
-                                <p style="font-size:17px;">Anti dumping is an additional duty applied to foreign goods that are imported and priced below fair market value.</p>
+                                <p style="font-size: 17px;">Anti dumping is an additional duty applied to foreign goods that are imported and priced below fair market value.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Bill of Lading</h4>
-                                <p style="font-size:17px;">This is a document that a carrier issues to whoever is shipping the goods. It simultaneously serves as a receipt, a contract, and a title of ownership.</p>
+                                <p style="font-size: 17px;">This is a document that a carrier issues to whoever is shipping the goods. It simultaneously serves as a receipt, a contract, and a title of ownership.</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Blind Shipment</h4>
-                                <p style="font-size:17px;">During a blind shipment, one or more of the parties involved are unaware of the others identity.</p>
+                                <p style="font-size: 17px;">During a blind shipment, one or more of the parties involved are unaware of the others identity.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Bonded Warehouse</h4>
-                                <p style="font-size:17px;">These warehouses are controlled by customs and allow imported goods to be stored until any duties owed are paid.</p>
+                                <p style="font-size: 17px;">These warehouses are controlled by customs and allow imported goods to be stored until any duties owed are paid.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Break Bulk</h4>
-                                <p style="font-size:17px;">Bulk cargo, or project cargo, refers to those goods which by their nature, dimensions or size cannot be transported in a standard container.</p>
+                                <p style="font-size: 17px;">Bulk cargo, or project cargo, refers to those goods which by their nature, dimensions or size cannot be transported in a standard container.</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Bunker Adjustment Factor (BAF)</h4>
-                                <p style="font-size:17px;">This term refers to the portion of sea freight charges that are adjustable based on the fluctuating cost of oil.</p>
+                                <p style="font-size: 17px;">This term refers to the portion of sea freight charges that are adjustable based on the fluctuating cost of oil.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Cargoes</h4>
-                                <p style="font-size:17px;">Cartage refers to the movement of goods within a small geographic area. These services are commonly used to move or combine goods from multiple warehouses.</p>
+                                <p style="font-size: 17px;">Cartage refers to the movement of goods within a small geographic area. These services are commonly used to move or combine goods from multiple warehouses.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Cash on delivery (COD)</h4>
-                                <p style="font-size:17px;">Cash On Delivery is a term that refers to a specific type of transaction. In such a transaction, payment for goods is made at the time of delivery.</p>
+                                <p style="font-size: 17px;">Cash On Delivery is a term that refers to a specific type of transaction. In such a transaction, payment for goods is made at the time of delivery.</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Chassis</h4>
-                                <p style="font-size:17px;">A chassis is simply a frame with wheels and container locking devices used to pickup and transport containers.</p>
+                                <p style="font-size: 17px;">A chassis is simply a frame with wheels and container locking devices used to pickup and transport containers.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Consolidation</h4>
-                                <p style="font-size:17px;">Consolidation refers to the combining of shipments from multiple suppliers to be packaged and shipped in the same container.</p>
+                                <p style="font-size: 17px;">Consolidation refers to the combining of shipments from multiple suppliers to be packaged and shipped in the same container.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Container Freight Station (CFS)</h4>
-                                <p style="font-size:17px;">A container freight station is a location where cargo shipments can be consolidated, deconsolidated or repacked at various points along the transport route.</p>
+                                <p style="font-size: 17px;">A container freight station is a location where cargo shipments can be consolidated, deconsolidated or repacked at various points along the transport route.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Container Yard (C/Y)</h4>
-                                <p style="font-size:17px;">A facility located at the port where containers wait to be loaded onto ships, or where containers are taken after being off-loaded.</p>
+                                <p style="font-size: 17px;">A facility located at the port where containers wait to be loaded onto ships, or where containers are taken after being off-loaded.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Cost Insurance and Freight (CIF)</h4>
-                                <p style="font-size:17px;">This is a term that refers to the need of a seller to arrange for goods to be transported to the destination port, as well as to provide the buyer with whatever documents he or she needs to obtain the goods.</p>
+                                <p style="font-size: 17px;">This is a term that refers to the need of a seller to arrange for goods to be transported to the destination port, as well as to provide the buyer with whatever documents he or she needs to obtain the goods.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Cubic Feet (CBF/CF/CFT)</h4>
-                                <p style="font-size:17px;">This term essentially serves the same function as a cubic meter, the primary difference is that in a cubic foot, the “cube” is characterized by foot-long edges as opposed to meter-long ones.</p>
+                                <p style="font-size: 17px;">This term essentially serves the same function as a cubic meter, the primary difference is that in a cubic foot, the “cube” is characterized by foot-long edges as opposed to meter-long ones.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Cubic Meter (CBM/CM)</h4>
-                                <p style="font-size:17px;">This is a unit of volume that describes a cube where each edge is one meter long. It is often used to describe what size shipment can fit on a carrier vessel.</p>
+                                <p style="font-size: 17px;">This is a unit of volume that describes a cube where each edge is one meter long. It is often used to describe what size shipment can fit on a carrier vessel.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Delivery Order (D/O)</h4>
-                                <p style="font-size:17px;">Delivery Order is a term that refers to the document from a shipper or freight owner that permits cargo to be transported to another place, such as a warehouse.</p>
+                                <p style="font-size: 17px;">Delivery Order is a term that refers to the document from a shipper or freight owner that permits cargo to be transported to another place, such as a warehouse.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Demurrage (DEM)</h4>
-                                <p style="font-size:17px;">A demurrage occurs when a vessel is detained by a cargo agent in port beyond the time necessary to load or unload the vessel. This term can also refer to the resulting charge that occurs when a vessel is detained.</p>
+                                <p style="font-size: 17px;">A demurrage occurs when a vessel is detained by a cargo agent in port beyond the time necessary to load or unload the vessel. This term can also refer to the resulting charge that occurs when a vessel is detained.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Destination Delivery Charge (DDC)</h4>
-                                <p style="font-size:17px;">This is a fee that is charged based on container size and is applied to cargo. This charge is “accessorial” and is added to whatever the base price is for freight. This charge covers the costs to lift the cargo off the vessel, the cost of drayage within the terminal, and the cost of gate fees.</p>
+                                <p style="font-size: 17px;">This is a fee that is charged based on container size and is applied to cargo. This charge is “accessorial” and is added to whatever the base price is for freight. This charge covers the costs to lift the cargo off the vessel, the cost of drayage within the terminal, and the cost of gate fees.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Retention</h4>
-                                <p style="font-size:17px;">Detention fees apply when a container is held outside of a port longer than the agreed upon “free time” and are typically charged by the hour.</p>
+                                <p style="font-size: 17px;">Detention fees apply when a container is held outside of a port longer than the agreed upon “free time” and are typically charged by the hour.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Documentation Fee (DOC)</h4>
-                                <p style="font-size:17px;">One of the fees that a shipper must pay to have goods transported either domestically or internationally.</p>
+                                <p style="font-size: 17px;">One of the fees that a shipper must pay to have goods transported either domestically or internationally.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Drawback</h4>
-                                <p style="font-size:17px;">A refund of certain fees that were paid during the import process. Once goods are reexported these duties and taxes are able to be returned.</p>
+                                <p style="font-size: 17px;">A refund of certain fees that were paid during the import process. Once goods are reexported these duties and taxes are able to be returned.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Drayage</h4>
-                                <p style="font-size:17px;">Similar to cartage, drayage refers to the local pickup or delivery from a port.</p>
+                                <p style="font-size: 17px;">Similar to cartage, drayage refers to the local pickup or delivery from a port.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Emergency Bunker Surcharge (EBS)</h4>
-                                <p style="font-size:17px;">An emergency bunker surcharge is similar to a BAF and is a charge added to shipping costs in order to cover the price of fuel.</p>
+                                <p style="font-size: 17px;">An emergency bunker surcharge is similar to a BAF and is a charge added to shipping costs in order to cover the price of fuel.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Position Surcharge (EPS)</h4>
-                                <p style="font-size:17px;">The charge associated with the cost of positioning a container to accommodate exports.</p>
+                                <p style="font-size: 17px;">The charge associated with the cost of positioning a container to accommodate exports.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Forty Foot Equivalent Unit (FEU)</h4>
-                                <p style="font-size:17px;">This ocean freight term refers to containerized cargo that is equivalent to either one forty foot container or two twenty foot containers. One FEU equals 25 metric tons or 72 cubic meters.</p>
+                                <p style="font-size: 17px;">This ocean freight term refers to containerized cargo that is equivalent to either one forty foot container or two twenty foot containers. One FEU equals 25 metric tons or 72 cubic meters.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Free Trade Zone (FTZ)</h4>
-                                <p style="font-size:17px;">A Free Trade Zone is a specific type of economic zone or geographic area where incoming and outgoing goods can be handled, manufactured, and/or reconfigured without customs authorities intervening. The shipments are not subject to customs duties until they are sent to customers within the country.</p>
+                                <p style="font-size: 17px;">A Free Trade Zone is a specific type of economic zone or geographic area where incoming and outgoing goods can be handled, manufactured, and/or reconfigured without customs authorities intervening. The shipments are not subject to customs duties until they are sent to customers within the country.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Freight on Board (FOB)</h4>
-                                <p style="font-size:17px;">This acronym, along with the designation “origin” or “destination”, determines who is responsible for covering freight costs. This is an example of an “incoterm,” or a trade term established by the International Chamber of Commerce.</p>
+                                <p style="font-size: 17px;">This acronym, along with the designation “origin” or “destination”, determines who is responsible for covering freight costs. This is an example of an “incoterm,” or a trade term established by the International Chamber of Commerce.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Freight Prepaid (FPP)</h4>
-                                <p style="font-size:17px;">This is a term often used on a Bill of Lading (B/L) to communicate that the shipment cost has already been paid. Although this is a nice way of allowing the receiver to avoid paying shipment costs, it also means the freight cost is nonrefundable.</p>
+                                <p style="font-size: 17px;">This is a term often used on a Bill of Lading (B/L) to communicate that the shipment cost has already been paid. Although this is a nice way of allowing the receiver to avoid paying shipment costs, it also means the freight cost is nonrefundable.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Fuel Adjustment Factor (FAF)</h4>
-                                <p style="font-size:17px;">This is an extra charge included to recover increased costs of fuel. It is often calculated based on the average price of fuel from the month prior to the shipping date.</p>
+                                <p style="font-size: 17px;">This is an extra charge included to recover increased costs of fuel. It is often calculated based on the average price of fuel from the month prior to the shipping date.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Full Container Load (FCL)</h4>
-                                <p style="font-size:17px;">This term refers to a container that a shipper has paid to use exclusively – it does not necessarily mean that the container is filled entirely. It is the standard form of freight shipping for those who need to transport a large amount of goods.</p>
+                                <p style="font-size: 17px;">This term refers to a container that a shipper has paid to use exclusively – it does not necessarily mean that the container is filled entirely. It is the standard form of freight shipping for those who need to transport a large amount of goods.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Full Truckload Shipping (FTL)</h4>
-                                <p style="font-size:17px;">This term refers to a shipping method where an entire trailer-load is contracted out to a single customer. Cargo remains with a single, dedicated trailer over the course of the shipment and is not handled en route. It is a very time- and cost-efficient way of shipping goods for shippers who need to move large amounts of cargo.</p>
+                                <p style="font-size: 17px;">This term refers to a shipping method where an entire trailer-load is contracted out to a single customer. Cargo remains with a single, dedicated trailer over the course of the shipment and is not handled en route. It is a very time- and cost-efficient way of shipping goods for shippers who need to move large amounts of cargo.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>General Order (GO)</h4>
-                                <p style="font-size:17px;">This term refers to the status given to imported goods that are either missing the documentation they need or are not quickly cleared through customs. Goods could be held under a “GO” for a number of reasons, such as because there are taxes owed on them or because paperwork still needs to be filled out.</p>
+                                <p style="font-size: 17px;">This term refers to the status given to imported goods that are either missing the documentation they need or are not quickly cleared through customs. Goods could be held under a “GO” for a number of reasons, such as because there are taxes owed on them or because paperwork still needs to be filled out.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>General Rate Increase (GRI)</h4>
-                                <p style="font-size:17px;">A General Rate Increase (GRI) is the average amount a carrier’s tariff rates increase annually. This increase is then applied to general shipping rates.</p>
+                                <p style="font-size: 17px;">A General Rate Increase (GRI) is the average amount a carrier’s tariff rates increase annually. This increase is then applied to general shipping rates.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>HAZMAT</h4>
-                                <p style="font-size:17px;">HAZMAT is an abbreviation for “Hazardous Materials.” These types of goods range from explosives to corrosives and must be communicated to the carrier before transport.</p>
+                                <p style="font-size: 17px;">HAZMAT is an abbreviation for “Hazardous Materials.” These types of goods range from explosives to corrosives and must be communicated to the carrier before transport.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>High Cube (HC)</h4>
-                                <p style="font-size:17px;">High Cube is a term that describes a specific type of shipping container. These containers are of similar structure to standard containers (often forty feet long) but are somewhat taller – usually 9’6” tall instead of 8’6” tall.</p>
+                                <p style="font-size: 17px;">High Cube is a term that describes a specific type of shipping container. These containers are of similar structure to standard containers (often forty feet long) but are somewhat taller – usually 9’6” tall instead of 8’6” tall.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Incoterms 2020</h4>
-                                <p style="font-size:17px;">These are rules developed by the International Chamber of Commerce to specify which services the seller and buyer are responsible for.</p>
+                                <p style="font-size: 17px;">These are rules developed by the International Chamber of Commerce to specify which services the seller and buyer are responsible for.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Intermodal</h4>
-                                <p style="font-size:17px;">This term refers to shipments that involve two or more modes of transportation.</p>
+                                <p style="font-size: 17px;">This term refers to shipments that involve two or more modes of transportation.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Landed Cost</h4>
-                                <p style="font-size:17px;">This term refers to the total cost of a product, including transportation costs and any additional fees.</p>
+                                <p style="font-size: 17px;">This term refers to the total cost of a product, including transportation costs and any additional fees.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Less Than Container Load (LCL)</h4>
-                                <p style="font-size:17px;">This is a term for cargo that does not meet either certain weight or certain quantity requirements to qualify for freight rates applied to a standard shipping container of goods.</p>
+                                <p style="font-size: 17px;">This is a term for cargo that does not meet either certain weight or certain quantity requirements to qualify for freight rates applied to a standard shipping container of goods.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Less Than Truckload (LTL)</h4>
-                                <p style="font-size:17px;">Less Than Truckload is a term that describes a method of shipment where multiple customers’ goods are mixed on a single trailer. Freight on these trailers are often handled at various points along the shipping route.</p>
+                                <p style="font-size: 17px;">Less Than Truckload is a term that describes a method of shipment where multiple customers’ goods are mixed on a single trailer. Freight on these trailers are often handled at various points along the shipping route.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Letter of Credit (L/C)</h4>
-                                <p style="font-size:17px;">This is a document that serves as a set of instructions from an importer’s bank to an overseas bank letting the latter know that it should pay the exporting company in advance. It serves as a guarantee of payment and can help facilitate trust between two business partners who don’t know each other very well.</p>
+                                <p style="font-size: 17px;">This is a document that serves as a set of instructions from an importer’s bank to an overseas bank letting the latter know that it should pay the exporting company in advance. It serves as a guarantee of payment and can help facilitate trust between two business partners who don’t know each other very well.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Lift On, Lift Off (LO/LO)</h4>
-                                <p style="font-size:17px;">Lift On/Lift Off is an acronym used to describe a specific type of carrier vessel. When these ships are used in transport, freight must be lifted on and off of the vessels using cranes.</p>
+                                <p style="font-size: 17px;">Lift On/Lift Off is an acronym used to describe a specific type of carrier vessel. When these ships are used in transport, freight must be lifted on and off of the vessels using cranes.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Multimodal</h4>
-                                <p style="font-size:17px;">When using several types of transport (sea, air, land or rail)</p>
+                                <p style="font-size: 17px;">When using several types of transport (sea, air, land or rail)</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Non-vessel operating common carrier (NVOCC)</h4>
-                                <p style="font-size:17px;">A non-vessel operating common carrier is a freight forwarder who doesn’t own a vessel. Instead, the freight forwarder acts as a carrier by taking certain responsibilities for shipments, including issuing bills of lading.</p>
+                                <p style="font-size: 17px;">A non-vessel operating common carrier is a freight forwarder who doesn’t own a vessel. Instead, the freight forwarder acts as a carrier by taking certain responsibilities for shipments, including issuing bills of lading.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Ocean freight (O/F)</h4>
-                                <p style="font-size:17px;">This term refers to a class of ships designated to carry wheeled cargo, such as automobiles, trucks, farm/construction equipment, and railroad cars. These ships have built-in ramps that allow wheeled cargo to be moved on and off of the vessel with ease.</p>
+                                <p style="font-size: 17px;">This term refers to a class of ships designated to carry wheeled cargo, such as automobiles, trucks, farm/construction equipment, and railroad cars. These ships have built-in ramps that allow wheeled cargo to be moved on and off of the vessel with ease.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Ocean freight forwarder (FF/OFF)</h4>
-                                <p style="font-size:17px;">An ocean freight forwarder is an individual or company that is responsible for organizing shipments on behalf of shippers. They book the transport and arrange space on the carriers, among others</p>
+                                <p style="font-size: 17px;">An ocean freight forwarder is an individual or company that is responsible for organizing shipments on behalf of shippers. They book the transport and arrange space on the carriers, among others</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Packing List</h4>
-                                <p style="font-size:17px;">This a detailed list that describes all items in a shipment, letting each party know how the goods should be handled.</p>
+                                <p style="font-size: 17px;">This a detailed list that describes all items in a shipment, letting each party know how the goods should be handled.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Panama Canal Charge (PCC)</h4>
-                                <p style="font-size:17px;">A Panama Canal Charge is the fee applied to shipments moving through the Panama Canal. This charge is set by the Panama Canal Authority and is set in terms of a price per TEU.</p>
+                                <p style="font-size: 17px;">A Panama Canal Charge is the fee applied to shipments moving through the Panama Canal. This charge is set by the Panama Canal Authority and is set in terms of a price per TEU.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Peak Season Surcharge (PSS)</h4>
-                                <p style="font-size:17px;">The peak season surcharge is a tariff that applies when there are high volumes of cargoes that hauliers have to transport. It usually occurs between summer and November each year. During this time carriers can negotiate rates.</p>
+                                <p style="font-size: 17px;">The peak season surcharge is a tariff that applies when there are high volumes of cargoes that hauliers have to transport. It usually occurs between summer and November each year. During this time carriers can negotiate rates.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Piracy Risk Surcharge (PRS)</h4>
-                                <p style="font-size:17px;">This is a charge that carriers often add to their prices in order to mitigate the threat of piracy when shipping goods via ocean liner.</p>
+                                <p style="font-size: 17px;">This is a charge that carriers often add to their prices in order to mitigate the threat of piracy when shipping goods via ocean liner.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Port Congestion Surcharge Or Pieces (PCS)</h4>
-                                <p style="font-size:17px;">This is a charge rendered to shippers in the instance that there is some sort of disturbance or other delay at the port when the shipment arrives. This could include a strike, lockout, work slowdown or stoppage, or another labor-related disruption.</p>
+                                <p style="font-size: 17px;">This is a charge rendered to shippers in the instance that there is some sort of disturbance or other delay at the port when the shipment arrives. This could include a strike, lockout, work slowdown or stoppage, or another labor-related disruption.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Port Security Fee (PSF)</h4>
-                                <p style="font-size:17px;">A port security fee is a charge that North American port authorities are entitled to issue to carriers to recover the costs of any security-related expenses in and around the port.</p>
+                                <p style="font-size: 17px;">A port security fee is a charge that North American port authorities are entitled to issue to carriers to recover the costs of any security-related expenses in and around the port.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Roll On, Roll Off (RO/RO)</h4>
-                                <p style="font-size:17px;">This term refers to any goods or shipments that are transported via boat across body of water. Many carriers and freight forwarders provide a number of services specific to ocean freight.</p>
+                                <p style="font-size: 17px;">This term refers to any goods or shipments that are transported via boat across body of water. Many carriers and freight forwarders provide a number of services specific to ocean freight.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Said to Contain (STC)</h4>
-                                <p style="font-size:17px;">This is a term often used on a bill of lading where the carrier acknowledges receiving a certain quantity of packages but is unaware of the exact nature or value of the contents. This helps to limit the carrier’s liability in the instance of an insurance claim.</p>
+                                <p style="font-size: 17px;">This is a term often used on a bill of lading where the carrier acknowledges receiving a certain quantity of packages but is unaware of the exact nature or value of the contents. This helps to limit the carrier’s liability in the instance of an insurance claim.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Terminal Handling Charge (THC)</h4>
-                                <p style="font-size:17px;">This term refers to the charges collected by authorities at the ports to cover the costs of handling equipment and performing maintenance. The exact costs vary from port to port based on the amount of handling and maintenance done at each one.</p>
+                                <p style="font-size: 17px;">This term refers to the charges collected by authorities at the ports to cover the costs of handling equipment and performing maintenance. The exact costs vary from port to port based on the amount of handling and maintenance done at each one.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Transshipment</h4>
-                                <p style="font-size:17px;">During a shuttle goods are moved from one vessel to another before continuing their trip.</p>
+                                <p style="font-size: 17px;">During a shuttle goods are moved from one vessel to another before continuing their trip.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Twenty Foot Equivalent Unit (TEU)</h4>
-                                <p style="font-size:17px;">A measure to describe the cargo capacity of a general cargo container.</p>
+                                <p style="font-size: 17px;">A measure to describe the cargo capacity of a general cargo container.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>UN number refers to dangerous cargoes</h4>
-                                <p style="font-size:17px;">These 4-digit numbers are used to classify different hazardous materials when shipping goods internationally.</p>
+                                <p style="font-size: 17px;">These 4-digit numbers are used to classify different hazardous materials when shipping goods internationally.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Value added tax (VAT)</h4>
-                                <p style="font-size:17px;">A value added tax is levied on goods whenever value is added to the product through a production stage or at the final sale. A manufacturer may pay VAT on all supplies it purchases for use in the final product, and this tax is often passed on to the consumer.</p>
+                                <p style="font-size: 17px;">A value added tax is levied on goods whenever value is added to the product through a production stage or at the final sale. A manufacturer may pay VAT on all supplies it purchases for use in the final product, and this tax is often passed on to the consumer.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
                                 <h4>Vehicle and Cargo Inspection System (VACIS)</h4>
-                                <p style="font-size:17px;">Also known as Customs Examination, this is the most common type of inspection performed at a port, usually in shipping. It is essentially the scanning of an entire shipment or container and is usually carried out at the first port of entry.</p>
+                                <p style="font-size: 17px;">Also known as Customs Examination, this is the most common type of inspection performed at a port, usually in shipping. It is essentially the scanning of an entire shipment or container and is usually carried out at the first port of entry.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Vessel operating common carrier (VOCC)</h4>
-                                <p style="font-size:17px;">This is basically the opposite of an NVOCC, or a freight forwarder who does own vessels used in the transport of goods.</p>
+                                <p style="font-size: 17px;">This is basically the opposite of an NVOCC, or a freight forwarder who does own vessels used in the transport of goods.</p>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <h4>Weight or Measure (W/M)</h4>
-                                <p style="font-size:17px;">This is a term that refers to the weight or volume of cargo that is used to determine the freight rate on export goods.</p>
+                                <p style="font-size: 17px;">This is a term that refers to the weight or volume of cargo that is used to determine the freight rate on export goods.</p>
                             </div>
                         </div>
                     </div>
 
                     <div id="tab-incoterms" class="knowledge-content-pane content-block" style="display: none;">
                         <h3 class="knowledge-main-title">Incoterms 2020</h3>
-                        <p style="font-size:17px;">Incoterm, or "International Commercial Terms" is a set of rules, which is international recognition to help in the global transport of goods. Each term has well-defined rules and regulations which both parties need to comply. The International Chamber of commerce publishes these rules. With Incoterm, language is never a barrier.</p>
+                        <p style="font-size: 17px;">Incoterm, or "International Commercial Terms" is a set of rules, which is international recognition to help in the global transport of goods. Each term has well-defined rules and regulations which both parties need to comply. The International Chamber of commerce publishes these rules. With Incoterm, language is never a barrier.</p>
 
                         <h4>Free on board (FOB)</h4>
-                        <p style="font-size:17px;">This term defines even split of price and responsibilities between buyer and seller.</p>
+                        <p style="font-size: 17px;">This term defines even split of price and responsibilities between buyer and seller.</p>
 
                         <h4>EX Works (EXW)</h4>
-                        <p style="font-size:17px;">This term puts the whole responsibility on the shoulder of the buyer, and the only responsibility that rests with the seller is that of making the goods available for pickup.</p>
+                        <p style="font-size: 17px;">This term puts the whole responsibility on the shoulder of the buyer, and the only responsibility that rests with the seller is that of making the goods available for pickup.</p>
 
                         <h4>Costs and freights (CFR)</h4>
-                        <p style="font-size:17px;">Under these terms, the seller must bear all costs up to the port of destination, for which the buyer is responsible.</p>
+                        <p style="font-size: 17px;">Under these terms, the seller must bear all costs up to the port of destination, for which the buyer is responsible.</p>
 
                         <h4>Costs, insurances and freights (CIFR)</h4>
-                        <p style="font-size:17px;">The terms are like those mentioned in CIF with the only difference that the buyer must include the costs incurred for insurance.</p>
+                        <p style="font-size: 17px;">The terms are like those mentioned in CIF with the only difference that the buyer must include the costs incurred for insurance.</p>
 
                         <h4>Free carrier (FCA)</h4>
-                        <p style="font-size:17px;">Under this shipping term, the seller must deliver the goods to a location where the carrier operates along with clearing the goods for export from the country of origin. The costs and the sole risk of liability are borne by the buyer in accordance with this Incoterm.</p>
+                        <p style="font-size: 17px;">Under this shipping term, the seller must deliver the goods to a location where the carrier operates along with clearing the goods for export from the country of origin. The costs and the sole risk of liability are borne by the buyer in accordance with this Incoterm.</p>
 
                         <h4>Free alongside ship (FAS)</h4>
-                        <p style="font-size:17px;">This term states it is the responsibility of the buyer to get the goods ready for loading alongside the ship besides customs, clearing it for export.</p>
+                        <p style="font-size: 17px;">This term states it is the responsibility of the buyer to get the goods ready for loading alongside the ship besides customs, clearing it for export.</p>
 
                         <h4>Delivered at terminal (DAT)</h4>
-                        <p style="font-size:17px;">Under this term, the seller must bear all the responsibility including unloading the goods at the named terminal at the destination port. The buyer bears all the other costs incurred such as Customs clearance, import duties, taxes, and delivery costs.</p>
+                        <p style="font-size: 17px;">Under this term, the seller must bear all the responsibility including unloading the goods at the named terminal at the destination port. The buyer bears all the other costs incurred such as Customs clearance, import duties, taxes, and delivery costs.</p>
 
                         <h4>Delivered duty paid (DDP)</h4>
-                        <p style="font-size:17px;">This term states the seller must bear all the risks and costs such as duties, taxes and other charges of delivering the goods along with clearance for import. The maximum obligation rests with the seller under this term.</p>
+                        <p style="font-size: 17px;">This term states the seller must bear all the risks and costs such as duties, taxes and other charges of delivering the goods along with clearance for import. The maximum obligation rests with the seller under this term.</p>
                     </div>
 
                     <div id="tab-dangerous" class="knowledge-content-pane content-block" style="display: none;">
                         <h3 class="knowledge-main-title">Dangerous Goods</h3>
                         <h4>What are dangerous goods?</h4>
-                        <p style="font-size:17px;">
+                        <p style="font-size: 17px;">
                             The Business Dictionary defines dangerous goods as “articles or materials capable of posing a significant risk to persons, 
                                 health, property or the environment when transported in large quantities”. It also notes that dangerous goods is the 
                                 “international standard term for goods covered by the United Nations Recommendations on the Transport of Dangerous Goods”. 
@@ -2047,7 +2062,7 @@
                             </table>
                         </div>
                         <h4 class="mt-4">How to ship dangerous goods?</h4>
-                        <p style="font-size:17px;">
+                        <p style="font-size: 17px;">
                             Before offering a dangerous good to an air carrier for shipment, the Hazardous Materials Regulations require the shipper 
                                 to properly classify, package, mark and label the package to identify the hazard.
                                When shipping dangerous goods (e.g. lithium batteries or battery-powered devices, aerosols, oxygen cylinders) or flammable 
@@ -2057,16 +2072,16 @@
                         </p>
 
                         <span class="step-title">Step 1: Safety Data Sheet (SDS)</span>
-                        <p style="font-size:17px;">
+                        <p style="font-size: 17px;">
                             The Safety Data Sheet (SDS) is a good starting point to determine if an item you are shipping may be hazardous. Generally you can obtain an SDS from the manufacturer of the products you plan to ship by air and refer to the shipping information section. Pay particular attention to the specific information that pertains to shipments by air.
                             A hazardous material or commodity is defined as a substance or material that is capable of posing a reasonable risk to health, safety, and property when transported in commerce. It is designated as hazardous under section 5103 of the Federal Hazardous Materials Act. Materials Transportation Act (49 USC 5103). The term includes hazardous substances, hazardous wastes, marine pollutants, elevated temperature materials, or those materials designated as hazardous in the Hazardous Materials Table that meet the criteria defining hazard classes and divisions in Part 173 of the Hazardous Materials Regulations.
                         </p>
 
                         <span class="step-title">Step 2: Needs Assessment</span>
-                        <p style="font-size:17px;">If you determine that an item is hazardous, the FAA recommends that you conduct a needs assessment analysis to determine which employees in your company will perform a hazardous materials function and identify the level of training that is required by the regulations.</p>
+                        <p style="font-size: 17px;">If you determine that an item is hazardous, the FAA recommends that you conduct a needs assessment analysis to determine which employees in your company will perform a hazardous materials function and identify the level of training that is required by the regulations.</p>
 
                         <span class="step-title">Step 3: Training</span>
-                        <p style="font-size:17px;">
+                        <p style="font-size: 17px;">
                             For most employees, training will include general and safety knowledge for their duties. Under 49 CFR, a hazardous materials employee is required to receive periodic training every three years.
 
 The lCAO Technical Instructions provide that the recurrent hazardous materials training requirements prescribed in Part L, Chapter 4, Section 4.2.3, “must take place within 24 months of previous training to ensure knowledge is current.”
@@ -2079,10 +2094,10 @@ Operates a vehicle used to transport hazardous materials or dangerous goods.
                         </p>
 
                         <span class="step-title">Step 4: </span>
-                        <p style="font-size:17px;">Ask a trained employee to look up the material in the hazardous materials Table or ICAO TI, as necessary, to determine the quantities permitted to be shipped. The labels required, and the packaging permitted under 49 CFR Part 173 or the appropriate ICAO TI packing instruction.</p>
+                        <p style="font-size: 17px;">Ask a trained employee to look up the material in the hazardous materials Table or ICAO TI, as necessary, to determine the quantities permitted to be shipped. The labels required, and the packaging permitted under 49 CFR Part 173 or the appropriate ICAO TI packing instruction.</p>
 
                         <span class="step-title">Step 5: </span>
-                        <p style="font-size:17px;">
+                        <p style="font-size: 17px;">
                             Determine the quantities and corresponding packaging requirements for your shipments. Depending on the group assigned to the hazardous material, UN-specification packaging may be required.
 
 The packing group is a grouping according to the degree of danger presented by hazardous materials or goods. The performance level identifies the performance standard to successful testing of the packaging:
@@ -2092,52 +2107,52 @@ Z – For packaging meeting packing group III test. (Packing Group III – Minor
                         </p>
 
                         <span class="step-title">Step 6: </span>
-                        <p style="font-size:17px;">
+                        <p style="font-size: 17px;">
                             If UN specification packaging is required, read the package sealing instructions carefully and obtain all materials listed in the instructions such as tape, ties, polythene bags ect. Be sure to follow the information instructions. Also review the additional requirements under 49 CFR Part 173.27(c)(3)(ii) if shipping liquids in individual packages by air.
 
 Packages meeting UN specifications are tested with the materials listed in the closure instructions. Any variation from the manufacturer’s instructions could compromise the integrity of the package and may be considered a violation of the Hazardous Material Regulations (HMR).
                         </p>
 
                         <span class="step-title">Step 7: </span>
-                        <p style="font-size:17px;">f UN specification packaging is required, read the package sealing instructions carefully and obtain all materials listed in the instructions such as tape, ties or polyethylene bags. Be sure to follow the information instructions. Also review the additional requirements under 49 CFR Part 173.27(c)(3)(ii) if shipping liquids in individual packages by air.</p>
+                        <p style="font-size: 17px;">f UN specification packaging is required, read the package sealing instructions carefully and obtain all materials listed in the instructions such as tape, ties or polyethylene bags. Be sure to follow the information instructions. Also review the additional requirements under 49 CFR Part 173.27(c)(3)(ii) if shipping liquids in individual packages by air.</p>
 
                         <span class="step-title">Step 8: </span>
-                        <p style="font-size:17px;">Mark and label the package.</p>
+                        <p style="font-size: 17px;">Mark and label the package.</p>
 
                         <span class="step-title">Step 9: </span>
-                        <p style="font-size:17px;">If you are using a combined package, place the material in its inner packaging according to the sealing instructions. Then place the inner packaging in its approved outer packaging and seal the package according to the instructions.</p>
+                        <p style="font-size: 17px;">If you are using a combined package, place the material in its inner packaging according to the sealing instructions. Then place the inner packaging in its approved outer packaging and seal the package according to the instructions.</p>
 
                         <span class="step-title">Step 10: </span>
-                        <p style="font-size:17px;">Fill in the shipping paper and affix it to the outside of the package in an unobstructed area.</p>
+                        <p style="font-size: 17px;">Fill in the shipping paper and affix it to the outside of the package in an unobstructed area.</p>
 
                         <span class="step-title">Step 11: </span>
-                        <p style="font-size:17px;">Your package is ready to be shipped.</p>
+                        <p style="font-size: 17px;">Your package is ready to be shipped.</p>
 
                         <span class="step-title">Step 12: </span>
-                        <p style="font-size:17px;">Keep the shipper’s declaration on file for a period of two years</p>
+                        <p style="font-size: 17px;">Keep the shipper’s declaration on file for a period of two years</p>
                     </div>
 
                     <div id="tab-customs" class="knowledge-content-pane content-block" style="display: none;">
                         <h3 class="knowledge-main-title">Customs Documentation Services</h3>
-                        <p style="font-size:17px;">Alonso Logistics India has years of experience in handling customs clearance in India. We have documents related to import and export regulations as well as the formalities to be followed for approval by the customs authorities. Your cargo handling is always very safe with us.</p>
+                        <p style="font-size: 17px;">Alonso Logistics India has years of experience in handling customs clearance in India. We have documents related to import and export regulations as well as the formalities to be followed for approval by the customs authorities. Your cargo handling is always very safe with us.</p>
 
                         <h4>Customs clearance procedure in India</h4>
-                        <p style="font-size:17px;">The import and export of goods in and out of a country must undergo a customs clearance process. The importer and exporter of the goods must submit valid documents to clear this process. In this article we examine some of the main steps and processes for customs clearance in India.</p>
+                        <p style="font-size: 17px;">The import and export of goods in and out of a country must undergo a customs clearance process. The importer and exporter of the goods must submit valid documents to clear this process. In this article we examine some of the main steps and processes for customs clearance in India.</p>
 
                         <span class="step-title">1. Calling of vessels</span>
-                        <p style="font-size:17px;">Once the vessels carrying the goods reaches the country, the person who carried the vessels should make sure that the calling of vessels is done at the customs port. For instance, if goods are imported via aircraft, the pilot is responsible for call of the vessels at the customs airport. There is no requirement for the importer to get involved in this process and will be done by the airline or shipping line.</p>
+                        <p style="font-size: 17px;">Once the vessels carrying the goods reaches the country, the person who carried the vessels should make sure that the calling of vessels is done at the customs port. For instance, if goods are imported via aircraft, the pilot is responsible for call of the vessels at the customs airport. There is no requirement for the importer to get involved in this process and will be done by the airline or shipping line.</p>
 
                         <span class="step-title">2. Presentation of the General Import Manifest (IGM)</span>
-                        <p style="font-size:17px;">The person in charge of the vehicle should file an Import General Manifest electronically before the goods arrive. This file would include the details of all the goods imported by the vessel.</p>
+                        <p style="font-size: 17px;">The person in charge of the vehicle should file an Import General Manifest electronically before the goods arrive. This file would include the details of all the goods imported by the vessel.</p>
 
                         <span class="step-title">3. Post verification operations</span>
                         <p>On review of the Import General Manifest and post verification of documents, the customs authorities will grant entry inwards to the vessel, assign an IGM number to the manifest and permit the master of the vessel to land and unload the cargo.</p>
 
                         <span class="step-title">4. Custody of custodian</span>
-                        <p style="font-size:17px;">On arrival of the vessel, the goods would remain in the custody of the Custodian until it clears the customs process. A custodian may be a person approved by Principal Commissioner or Commissioner of Customs for this purpose. Imported goods can be unloaded subject to the following conditions:</p>
+                        <p style="font-size: 17px;">On arrival of the vessel, the goods would remain in the custody of the Custodian until it clears the customs process. A custodian may be a person approved by Principal Commissioner or Commissioner of Customs for this purpose. Imported goods can be unloaded subject to the following conditions:</p>
 
                         <span class="step-title">5. Presentation of the incoming invoice</span>
-                        <p style="font-size:17px;">
+                        <p style="font-size: 17px;">
                             The importer of the goods must submit an entry invoice (customs copy) electronically for clearance of the goods, before or upon arrival of the goods. On the entry invoice, the importer himself determines the duties and taxes to be paid, which is called self-assessment. The importer will self-assess the duty after considering the applicable exchange rate and the import duty rate. After approval of the entry invoice, the importer has to pay the GST and duty to be entered in the Indian Customs Electronic Date Exchange System (ICEDIS). Once entered in ICEDIS, an entry invoice number will be generated.
 
 Subsequently, the importer must present the entry invoice (customs copy), cross-check with duties paid and other supporting documents to the port authorities to make an order allowing clearance. After making a clearance order, the port officer would generate a duplicate entry invoice (importer’s copy) and a triplicate entry invoice (exchange control copy). Both copies would subsequently be given to the authorised person.
@@ -2149,7 +2164,7 @@ Should be unloaded only during working hours.
                         </p>
 
                         <span class="step-title">6. Delivery of goods</span>
-                        <p style="font-size:17px;">On showing the customs clearances to the port authorities, the importer can take the delivery of his goods. In case of cargo deposited in a warehouse, the importer would another bill of entry called the ex-bond bill of entry to clear the whole or part of the warehoused cargo</p>
+                        <p style="font-size: 17px;">On showing the customs clearances to the port authorities, the importer can take the delivery of his goods. In case of cargo deposited in a warehouse, the importer would another bill of entry called the ex-bond bill of entry to clear the whole or part of the warehoused cargo</p>
                     </div>
 
                 </div>
@@ -2167,23 +2182,26 @@ Should be unloaded only during working hours.
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <h3 class="mb-4" style="color: #0056A6; font-weight: 700;">Get in Touch</h3>
-                    <p style="color: #555; line-height: 1.6; font-size:17px;">If you have any questions about our services, supply chain solutions, or trading opportunities, please fill out the form or reach out to us using the options provided.</p>
+                    <p style="color: #555; line-height: 1.6; font-size: 17px;">If you have any questions about our services, supply chain solutions, or trading opportunities, please fill out the form or reach out to us using the options provided.</p>
                     <div class="mt-4">
                         <h5 style="color: #333; font-weight: 600;">Office Address</h5>
-                        <p style="color: #666; font-size:17px;">
+                        <p style="color: #666; font-size: 17px;">
                             402,7 A, Shankeshwar Palms,<br />
-                            Kumbharkan Pada, Dombivili (W), <br />
-                            Dist-Thane, Maharashtra. India(IN) <br />
-                            421202 <br />
+                            Kumbharkan Pada, Dombivili (W),
+                            <br />
+                            Dist-Thane, Maharashtra. India(IN)
+                            <br />
+                            421202
+                            <br />
                             Office No.: +91 9892219882                          
                         </p>
                     </div>
                     <div class="mt-3">
                         <h5 style="color: #333; font-weight: 600;">Email Address</h5>
-                        <p style="color: #666; font-size:17px;">nair@swayamprabhas.in</p>
-                        <p style="color: #666; font-size:17px;">logistics@swayamprabhas.in</p>
+                        <p style="color: #666; font-size: 17px;">nair@swayamprabhas.in</p>
+                        <p style="color: #666; font-size: 17px;">logistics@swayamprabhas.in</p>
                     </div>
-                    
+
                 </div>
                 <div class="col-md-6">
                     <div class="card p-4 shadow-sm border-0 bg-light">
@@ -2327,28 +2345,28 @@ Should be unloaded only during working hours.
                 });
         }
     </script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
 
-        const boxes = document.querySelectorAll('.expertise-box');
+            const boxes = document.querySelectorAll('.expertise-box');
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
 
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                } else {
-                    entry.target.classList.remove('show');
-                }
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('show');
+                    }
 
+                });
+            }, {
+                threshold: 0.3
             });
-        }, {
-            threshold: 0.3
-        });
 
-        boxes.forEach(box => observer.observe(box));
-    });
-</script>
+            boxes.forEach(box => observer.observe(box));
+        });
+    </script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
 
