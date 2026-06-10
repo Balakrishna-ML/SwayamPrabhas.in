@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script>
+        emailjs.init({
+            publicKey: "Czl7aO-erutYhJ5qQ"
+        });
+    </script>
     <style>
         body {
             margin: 0;
@@ -2295,13 +2300,18 @@ Should be unloaded only during working hours.
             }
         }
 
+        emailjs.init({
+            publicKey: "Czl7aO-erutYhJ5qQ"
+        });
+
         function submitMessage() {
             var name = document.getElementById("contactName").value.trim();
             var email = document.getElementById("contactEmail").value.trim();
             var message = document.getElementById("contactMessage").value.trim();
+
             var statusDiv = document.getElementById("formStatus");
 
-            if (name === "" || email === "" || message === "") {
+            if (!name || !email || !message) {
                 statusDiv.className = "mt-3 alert alert-warning";
                 statusDiv.innerText = "Please fill out all fields before sending.";
                 statusDiv.style.display = "block";
@@ -2312,36 +2322,23 @@ Should be unloaded only during working hours.
             statusDiv.innerText = "Sending message...";
             statusDiv.style.display = "block";
 
-            fetch('Swayam_Prabhas_In.aspx/SendMessage', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json; charset=utf-8'
-                },
-                body: JSON.stringify({ name: name, email: email, message: message })
+            emailjs.send("service_d9po435", "template_g5enaor", {
+                from_name: name,
+                from_email: email,
+                message: message
             })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response failure.');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    if (data.d === "Success") {
-                        statusDiv.className = "mt-3 alert alert-success";
-                        statusDiv.innerText = "Thank you! Your message has been sent successfully.";
+                .then(() => {
+                    statusDiv.className = "mt-3 alert alert-success";
+                    statusDiv.innerText = "Message sent successfully!";
 
-                        document.getElementById("contactName").value = "";
-                        document.getElementById("contactEmail").value = "";
-                        document.getElementById("contactMessage").value = "";
-                    } else {
-                        statusDiv.className = "mt-3 alert alert-danger";
-                        statusDiv.innerText = "Error: " + data.d;
-                    }
+                    document.getElementById("contactName").value = "";
+                    document.getElementById("contactEmail").value = "";
+                    document.getElementById("contactMessage").value = "";
                 })
-                .catch(error => {
+                .catch((error) => {
                     statusDiv.className = "mt-3 alert alert-danger";
-                    statusDiv.innerText = "An error occurred or connection failed.";
-                    console.error('Error handling dispatch:', error);
+                    statusDiv.innerText = "Failed to send message.";
+                    console.log(error);
                 });
         }
     </script>
